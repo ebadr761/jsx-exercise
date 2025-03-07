@@ -20,8 +20,8 @@ function App() {
       <p> {newComponent(isLoggedIn)}</p>
 
       <Home heading="Welcome to the Home Page!" description="Welcome to our website." />
-      <About heading="About Us:" description="We are passionate about delivering quality experiences."/>
-      <Contact heading="Contact Us:" description="Feel free to reach out to us via email or phone." />
+      <About heading="About Us" description="We are passionate about delivering quality experiences."/>
+      <Contact heading="Contact Us" description="Feel free to reach out to us via email or phone." />
 
       <EngineeringTopics />
 
