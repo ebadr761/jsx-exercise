@@ -1,5 +1,15 @@
 import React from 'react';
 
-function Home() {
-    return <h1>Welcome to the Home Page</h1>;
+function Home(props) {
+    return (
+        <div>
+
+        <h1>{props.heading}</h1>
+        <p>{props.description}</p>
+
+        </div>
+    )
+
 }
+
+export default Home;

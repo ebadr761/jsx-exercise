@@ -1,7 +1,14 @@
 import React from 'react';
 
-function Contact() {
+function Contact(props) {
     return (
-        <h1>Contact Us</h1>
+        <div>
+
+        <h1>{props.heading}</h1>
+        <p>{props.description}</p>
+
+        </div>
     )
 }
+
+export default Contact;
