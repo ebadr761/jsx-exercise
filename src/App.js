@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// import components
+import '.Home.js';
+import '.Contact.js';
+import '.About.js';
 
+function newComponent(isLoggedIn) {
+  return isLoggedIn ? <p>Welcome back!</p> : <p>Please login.</p>;
+}
 function App() {
+  const currentYear = new Date().getFullYear();
+  const isLoggedIn = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ENSF-381: Full-Stack Web Development</h1>
+      <p>React Components</p>
+      <p>{currentYear}</p>
+      <p> {newComponent(isLoggedIn)}</p>
+
+      <Home />
+      <Contact />
+      <About />
     </div>
   );
 }
